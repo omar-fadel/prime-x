@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import Library from "animation-ship-components";
+import { Theme } from "animation-ship-components";
 
 const config: Config = {
   content: [
@@ -8,7 +8,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/animation-ship-components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: Library.Themes.primeX,
+  theme: Theme.primeX,
   plugins: [],
 };
 export default config;

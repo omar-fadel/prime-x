@@ -1,0 +1,22 @@
+{
+  "header": {
+    "address": "Address",
+    "classesAndSubs": "Classes and Subscriptions",
+    "clinics": "Clinics",
+    "contactUs": "Contact Us"
+  },
+  "home": {
+    "firstSection": {
+      "title": "Welcome to Prime X Ladies' Gym",
+      "subTitle": "A comprehensive fitness and lifestyle center designed just for you. Start your journey with a wide range of services under one roof."
+    },
+    "secondSection": {
+      "title": "Our Mission",
+      "subTitle": "Helping women advance through our fitness, health, and wellness programs, supporting each member to achieve their best."
+    },
+    "thirdSection": {
+      "title": "Our Vision",
+      "subTitle": "To be the leading fitness and health center for women in Saudi Arabia, the place where women go to train, recover, and enjoy."
+    }
+  }
+}
