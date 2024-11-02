@@ -25,7 +25,7 @@ const TextImageSection: React.FC<TextImageSectionProps> = ({
 }) => {
   const componentOne = useMemo(
     () => (
-      <Stack className="p-[4rem]">
+      <Stack component="h1" className="p-[4rem]">
         <Typography color="primary" variant="h3">
           {title}
         </Typography>

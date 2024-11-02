@@ -17,6 +17,11 @@
     "thirdSection": {
       "title": "Our Vision",
       "subTitle": "To be the leading fitness and health center for women in Saudi Arabia, the place where women go to train, recover, and enjoy."
+    },
+    "fourthSection": {
+      "title": "Why Us?",
+      "subTitle": "Because we care about your health and comfort through our values",
+      "items": ["Excellence", "Strength", "Health", "Well-being"]
     }
   }
 }

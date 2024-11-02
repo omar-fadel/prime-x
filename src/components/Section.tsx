@@ -1,10 +1,10 @@
 "use client";
 
 import {
-  Container,
   Stack,
   TwoHalf,
   Typography,
+  Container,
 } from "animation-ship-components";
 
 interface SectionProps {
@@ -20,7 +20,7 @@ export const Section: React.FC<SectionProps> = ({
     <section>
       <Container
         className="h-[48.75rem]"
-        backgroundcolor="white"
+        backgroundColor="white"
         backgroundImage="/backgrounds/home-1.png"
       >
         <TwoHalf
