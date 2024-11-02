@@ -25,7 +25,7 @@ const TextImageSection: React.FC<TextImageSectionProps> = ({
 }) => {
   const componentOne = useMemo(
     () => (
-      <Stack component="h1" className="p-[4rem]">
+      <Stack className="p-[4rem]">
         <Typography color="primary" variant="h3">
           {title}
         </Typography>
@@ -42,7 +42,7 @@ const TextImageSection: React.FC<TextImageSectionProps> = ({
   );
 
   return (
-    <Container backgroundcolor={isGrey ? "grey" : "white"}>
+    <Container backgroundColor={isGrey ? "grey" : "white"}>
       <TwoHalf
         startComponent={isReversed ? componentTwo : componentOne}
         endComponent={isReversed ? componentOne : componentTwo}

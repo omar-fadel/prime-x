@@ -21,7 +21,7 @@ export const Section: React.FC<SectionProps> = ({
       <Container
         className="h-[48.75rem]"
         backgroundColor="white"
-        backgroundImage="/backgrounds/home-1.png"
+        // backgroundImage="/backgrounds/home-1.png"
       >
         <TwoHalf
           startComponent={<div />}

@@ -27,10 +27,20 @@ const WhyUsSection: React.FC<WhyUseSectionProps> = ({
     <Container>
       <CenterChildren className="h-[32.5rem]">
         <Stack className="max-w-[52rem] w-full">
-          <Typography className="w-full" align="center" color="primary" variant="h1">
+          <Typography
+            className="w-full"
+            align="center"
+            color="primary"
+            variant="h1"
+          >
             {title}
           </Typography>
-          <Typography className="w-full" align="center" color="black" variant="body1">
+          <Typography
+            className="w-full"
+            align="center"
+            color="black"
+            variant="body1"
+          >
             {subTitle}
           </Typography>
           <SpaceBetween className="bg-grey-light p-6 w-full rounded-2xl">
