@@ -5,6 +5,22 @@
     "clinics": "العيادات",
     "contactUs": "تواصلي معنا"
   },
+  "footer": {
+    "facebookLink": "https://www.facebook.com/primexladiesgym",
+    "instagramLink": "https://www.instagram.com/primexladiesgym",
+    "xLink": "https://www.x.com",
+    "snapchatLink": "https://www.snapchat.com/primexladiesgym",
+    "linkedInLink": "https://www.linkedin.com/primexladiesgym",
+    "followUs": "تابعينا على",
+    "contactUs": "تواصلي معنا",
+    "phone": "٠٥xxxxxxxxx",
+    "email": "info@primex.com",
+    "address": "طريق النادي- جيزان - المملكة العربية السعودية",
+    "reserveNow": "احجزي الآن",
+    "reserveNowButton": "احجزي موعدك المجاني",
+    "mapLink": "https://www.google.com",
+    "reservationDescription": "احجزي موعدك واحصلي على خطة تمرين مجانية الان"
+  },
   "home": {
     "firstSection": {
       "title": "مرحبًا بك في صالة برايم إكس للسيدات",
@@ -23,5 +39,17 @@
       "subTitle": "لاننا حريصين على صحتك وراحتك من خلال قيمنا",
       "items": ["التميّز", "القوة", "الصحة", "الرفاهية"]
     }
+  },
+  "form": {
+    "formTitle": "موعد الاتصال بك",
+    "calendarTitle": "موعد الاتصال بك",
+    "emailLabel": "بريدك الالكتروني",
+    "firstNameLabel": "الاسم الأول",
+    "lastNameLabel": "الاسم الأخير",
+    "phoneLabel": "الجوال",
+    "submitText": "إتمام الحجز",
+    "yearOfBirthLabel": "سنة الميلاد",
+    "times": ["من ٦ ص إلى ١٢ م", "من ١٢ م إلى ٥ م", "من ٥ م ١٠ م إلى"],
+    "timeHeader": "اختاري موعد المكالمة المناسب"
   }
 }

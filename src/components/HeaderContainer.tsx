@@ -1,38 +1,79 @@
 "use client";
+import { Header, Icons } from "animation-ship-components";
+import { usePathname, useRouter } from "next/navigation";
+import { useMemo } from "react";
 
-import { Header } from "animation-ship-components";
-import Logo from "../icons/logo.svg";
-import { usePathname } from "next/navigation";
-
-interface HeaderContainerProps {
-  items: {
-    id: string;
-    text: string;
-  }[];
-  language: "ar" | "en";
+export interface HeaderContainerProps {
+  items?: [];
+  currentLanguage: "ar" | "en";
+  addressLabel: string;
+  classesAndSubsLabel: string;
+  clinicsLabel: string;
+  contactUsLabel: string;
 }
 
 const HeaderContainer: React.FC<HeaderContainerProps> = ({
-  items,
-  language,
+  currentLanguage,
+  addressLabel,
+  classesAndSubsLabel,
+  clinicsLabel,
+  contactUsLabel,
 }) => {
-  const pathname = usePathname();
-  const currentRoute = pathname.split("/").pop();
+  const router = useRouter();
+  const path = usePathname();
 
-  const handleLanguageChange = () => {
-    console.log("Language changed");
+  const activeItem = useMemo(() => {
+    return path.split("/")[2];
+  }, [path]);
+
+  const handleClickHeaderItem = (id: string) => {
+    router.push(`/${id}`);
+  };
+
+  const handleClickLogo = () => {
+    router.push("/");
+  };
+
+  const handleChangeLanguage = () => {
+    if (currentLanguage === "ar") {
+      router.push(`/en/${activeItem}`);
+    } else {
+      router.push(`/ar/${activeItem}`);
+    }
   };
   return (
     <Header
-      currentLanguage={language}
-      logo={<Logo style={{ width: "11rem", height: "1.7875rem" }} />}
-      onLanguageChange={handleLanguageChange}
+      currentLanguage={currentLanguage}
+      onLanguageChange={handleChangeLanguage}
+      logo={
+        <Icons
+          onClick={handleClickLogo}
+          width="11.0625rem"
+          height={"1.7928rem"}
+          iconName="PrimeXLogo"
+        />
+      }
       headerList={{
-        activeItem: currentRoute!,
-        items,
-        onChangeActiveItem(id) {
-          console.log("Active item changed to:", id);
-        },
+        activeItem,
+        items: [
+          {
+            id: "address",
+            text: addressLabel,
+          },
+          {
+            id: "classes",
+            text: classesAndSubsLabel,
+          },
+          {
+            id: "clinics",
+            text: clinicsLabel,
+          },
+          {
+            id: "contact-us",
+            text: contactUsLabel,
+          },
+        ],
+        onChangeActiveItem: handleClickHeaderItem,
       }}
     />
   );

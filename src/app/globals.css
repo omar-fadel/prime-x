@@ -33,15 +33,14 @@ body {
   --color-grey-dark: #424242;
   --color-grey-main: #757575;
 }
-
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 764px) {
   html {
-    font-size: 82.5%;
+    font-size: 85%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
   html {
-    font-size: 60%;
+    font-size: 70%;
   }
 }

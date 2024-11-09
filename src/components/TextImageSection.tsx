@@ -1,52 +1,76 @@
-"use client";
 import {
+  CenterChildren,
   Container,
   Stack,
-  TwoHalf,
   Typography,
 } from "animation-ship-components";
-import Image from "next/image";
-import { useMemo } from "react";
+import clsx from "clsx";
+import { ReactNode } from "react";
 
-interface TextImageSectionProps {
-  title: string;
-  description: string;
-  image: string;
-  isGrey?: boolean;
+export interface TextImageSectionProps {
   isReversed?: boolean;
+  image: ReactNode;
+  header: string;
+  text: string;
+  backgroundColor?: "white" | "grey";
 }
 
-const TextImageSection: React.FC<TextImageSectionProps> = ({
-  title,
-  description,
-  image,
-  isGrey,
-  isReversed,
+const Text: React.FC<Pick<TextImageSectionProps, "header" | "text">> = ({
+  header,
+  text,
 }) => {
-  const componentOne = useMemo(
-    () => (
-      <Stack className="p-[4rem]">
-        <Typography color="primary" variant="h3">
-          {title}
-        </Typography>
-        <Typography variant="body1">{description}</Typography>
-      </Stack>
-    ),
-    [description, title]
-  );
-  const componentTwo = useMemo(
-    () => (
-      <Image width={512} height={512} src={`/images/${image}.png`} alt="home" />
-    ),
-    [image]
-  );
-
   return (
-    <Container backgroundColor={isGrey ? "grey" : "white"}>
-      <TwoHalf
-        startComponent={isReversed ? componentTwo : componentOne}
-        endComponent={isReversed ? componentOne : componentTwo}
-      />
+    <Stack className="gap-[2rem]">
+      <Typography
+        className="text-center md:text-start"
+        color="primary"
+        variant="h2"
+      >
+        {header}
+      </Typography>
+      <Typography
+        className="text-center md:text-start"
+        color="black"
+        variant="body1"
+      >
+        {text}
+      </Typography>
+    </Stack>
+  );
+};
+
+const TextImageSection: React.FC<TextImageSectionProps> = ({
+  isReversed,
+  header,
+  text,
+  image,
+  backgroundColor = "white",
+}) => {
+  return (
+    <Container
+      className={clsx({
+        "bg-white": backgroundColor === "white",
+        "bg-grey-light": backgroundColor === "grey",
+      })}
+    >
+      <section className={"grid grid-cols-2 p-[2rem]"}>
+        <CenterChildren
+          className={clsx("col-span-2 md:col-span-1 md:row-start-1", {
+            "md:col-start-2": isReversed,
+            "md:col-start-1": !isReversed,
+          })}
+        >
+          <Text header={header} text={text} />
+        </CenterChildren>
+        <CenterChildren
+          className={clsx("col-span-2 md:col-span-1 md:row-start-1", {
+            "md:col-start-1": isReversed,
+            "md:col-start-2": !isReversed,
+          })}
+        >
+          {image}
+        </CenterChildren>
+      </section>
     </Container>
   );
 };

@@ -1,18 +1,33 @@
 {
   "header": {
     "address": "Address",
-    "classesAndSubs": "Classes and Subscriptions",
+    "classesAndSubs": "Memberships and Classes",
     "clinics": "Clinics",
     "contactUs": "Contact Us"
   },
+  "footer": {
+    "facebookLink": "https://www.facebook.com/primexladiesgym",
+    "instagramLink": "https://www.instagram.com/primexladiesgym",
+    "xLink": "https://www.x.com",
+    "snapchatLink": "https://www.snapchat.com/primexladiesgym",
+    "linkedInLink": "https://www.linkedin.com/primexladiesgym",
+    "followUs": "Follow Us",
+    "contactUs": "Contact Us",
+    "phone": "05xxxxxxxxx",
+    "email": "info@primex.com",
+    "address": "Club Road - Jizan - Kingdom of Saudi Arabia",
+    "reserveNow": "Reserve Now",
+    "reserveNowButton": "Book Your Free Appointment",
+    "mapLink": "https://www.google.com"
+  },
   "home": {
     "firstSection": {
-      "title": "Welcome to Prime X Ladies' Gym",
+      "title": "Welcome to Prime X Ladies Gym",
       "subTitle": "A comprehensive fitness and lifestyle center designed just for you. Start your journey with a wide range of services under one roof."
     },
     "secondSection": {
       "title": "Our Mission",
-      "subTitle": "Helping women advance through our fitness, health, and wellness programs, supporting each member to achieve their best."
+      "subTitle": "Helping women progress through our fitness, health, and wellness programs, supporting each member to achieve their best."
     },
     "thirdSection": {
       "title": "Our Vision",
