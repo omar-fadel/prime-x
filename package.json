@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "animation-ship-components": "^0.0.5",
+    "animation-ship-components": "^1.0.0",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
     "next": "15.0.1",
