@@ -2,13 +2,14 @@ import { getDictionary } from "./dictionaries";
 import { Container } from "animation-ship-components";
 import HeaderContainer from "../../components/HeaderContainer";
 import FooterContainer from "../../components/FooterContainer";
+import { Params } from "../../types/params";
 
 export default async function RootLayout({
   children,
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { lang: "en" | "ar" };
+  params: Params;
 }>) {
   const awaitedParams = await params;
   const dictionaries = await getDictionary(awaitedParams.lang);
