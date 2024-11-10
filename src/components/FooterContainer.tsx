@@ -1,6 +1,7 @@
 "use client";
 import { Footer } from "animation-ship-components";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 
 interface FooterContainerProps {
   contactUsLabel: string;
@@ -35,9 +36,14 @@ const FooterContainer: React.FC<FooterContainerProps> = ({
   phone,
   mapUrl,
 }) => {
-  const handleReserveClick = () => {
-    console.log("reserve");
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const handleClickButton = () => {
+    const locale = pathname.split("/")[1];
+    router.push(`/${locale}/contact-us`);
   };
+
   return (
     <Footer
       logo={
@@ -57,7 +63,7 @@ const FooterContainer: React.FC<FooterContainerProps> = ({
       email={email}
       mapHref={mapUrl}
       number={phone}
-      onReserveClick={handleReserveClick}
+      onReserveClick={handleClickButton}
       socialMedia={[
         {
           href: linkedInLink,

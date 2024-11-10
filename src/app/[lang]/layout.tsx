@@ -15,7 +15,7 @@ export default async function RootLayout({
 
   return (
     <main dir={awaitedParams.lang === "ar" ? "rtl" : "ltr"}>
-      <Container>
+      <Container className="bg-white">
         <HeaderContainer
           addressLabel={dictionaries.header.address}
           classesAndSubsLabel={dictionaries.header.classesAndSubs}

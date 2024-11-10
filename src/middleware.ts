@@ -7,7 +7,6 @@ const getLocale = () => "ar";
 
 export function middleware(request: NextRequest) {
   // Check if there is any supported locale in the pathname
-  console.log(request.nextUrl);
   const { pathname } = request.nextUrl;
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`

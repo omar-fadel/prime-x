@@ -18,7 +18,8 @@
     "address": "Club Road - Jizan - Kingdom of Saudi Arabia",
     "reserveNow": "Reserve Now",
     "reserveNowButton": "Book Your Free Appointment",
-    "mapLink": "https://www.google.com"
+    "mapLink": "https://www.google.com",
+    "reservationDescription": "Book your appointment and get a free workout plan now"
   },
   "home": {
     "firstSection": {
@@ -37,6 +38,138 @@
       "title": "Why Us?",
       "subTitle": "Because we care about your health and comfort through our values",
       "items": ["Excellence", "Strength", "Health", "Well-being"]
-    }
+    },
+    "end": "Start with us now"
+  },
+  "address": {
+    "title": "Now in Jizan",
+    "address": "Address",
+    "addressDetails": "Club Road - Jizan - Kingdom of Saudi Arabia",
+    "workTime": "Working Hours",
+    "weekDaysWorkTime": "From Saturday to Thursday",
+    "weekDaysWorkTimeDetails": "From 7:00 AM to 11:00 PM",
+    "weekEndWorkTime": "Friday",
+    "weekEndWorkTimeDetails": "From 1:00 PM to 10:00 PM",
+    "reserveText": "Book Your Appointment",
+    "reserveSubtext": "To start the adventure now."
+  },
+  "classes": {
+    "bannerTitle": "Memberships and Classes",
+    "subscriptionsTitle": "Our Memberships",
+    "subscriptionsSubtitle": "Our memberships are better.",
+    "subscriptionButtonText": "Subscribe Now",
+    "subscriptionCards": [
+      {
+        "id": "1",
+        "points": [
+          "Get one month free.",
+          "Access the gym during all working hours.",
+          "Certified trainers available in the gym at all times to assist you.",
+          "Attend our latest and diverse classes.",
+          "The latest sports equipment.",
+          "A dedicated area for group exercises."
+        ],
+        "title": "One Month Subscription"
+      },
+      {
+        "id": "3",
+        "points": [
+          "Get one month free.",
+          "Access the gym during all working hours.",
+          "Certified trainers available in the gym at all times to assist you.",
+          "Attend our latest and diverse classes.",
+          "The latest sports equipment.",
+          "A dedicated area for group exercises."
+        ],
+        "title": "Three Months Subscription"
+      },
+      {
+        "id": "6",
+        "points": [
+          "Get one month free.",
+          "Access the gym during all working hours.",
+          "Certified trainers available in the gym at all times to assist you.",
+          "Attend our latest and diverse classes.",
+          "The latest sports equipment.",
+          "A dedicated area for group exercises."
+        ],
+        "title": "Six Months Subscription"
+      },
+      {
+        "id": "12",
+        "points": [
+          "Get one month free.",
+          "Access the gym during all working hours.",
+          "Certified trainers available in the gym at all times to assist you.",
+          "Attend our latest and diverse classes.",
+          "The latest sports equipment.",
+          "A dedicated area for group exercises."
+        ],
+        "title": "One Year Subscription"
+      }
+    ],
+    "classesTitle": "Our Classes",
+    "classesSubtitle": "Our classes are different.",
+    "classesButtonText": "Join Now",
+    "classes": [
+      {
+        "id": "class-1",
+        "title": "YOGA"
+      },
+      {
+        "id": "class-2",
+        "title": "YOGA"
+      },
+      {
+        "id": "class-3",
+        "title": "YOGA"
+      }
+    ],
+    "moreServices": "For more about our beauty services",
+    "moreServicesLink": "Clinics",
+    "reserveNow": "Book Your Appointment",
+    "reserveNowDescription": "To start the adventure now."
+  },
+  "clinics": {
+    "banner": "Clinics and Beauty",
+    "clinics": [
+      {
+        "id": "clinic-1",
+        "title": "YOGA"
+      },
+      {
+        "id": "clinic-2",
+        "title": "YOGA"
+      },
+      {
+        "id": "clinic-3",
+        "title": "YOGA"
+      }
+    ],
+    "title": "Our Clinics",
+    "subTitle": "Our clinics are healthier.",
+    "moreSubscription": "For more about memberships and classes",
+    "moreSubscriptionLink": "Memberships and Classes",
+    "reserveNow": "Ready for a change?"
+  },
+  "contactUs": {
+    "bannerTitle": "We are here for you",
+    "bannerWorkTime": "You can contact us from",
+    "bannerWorkTimeDetails": "7:00 AM to 11:00 PM",
+    "bannerPhoneNumberTitle": "Phone Number",
+    "gift": "Get a free gift"
+  },
+  "form": {
+    "formHeader": "Book your appointment and get a free workout plan now",
+    "formTitle": "Contact Appointment",
+    "calendarTitle": "Contact Appointment",
+    "emailLabel": "Your Email",
+    "firstNameLabel": "First Name",
+    "lastNameLabel": "Last Name",
+    "phoneLabel": "Phone",
+    "submitText": "Complete Booking",
+    "yearOfBirthLabel": "Year of Birth",
+    "times": ["From 6 AM to 12 PM", "From 12 PM to 5 PM", "From 5 PM to 10 PM"],
+    "timeHeader": "Choose a suitable call time"
   }
 }

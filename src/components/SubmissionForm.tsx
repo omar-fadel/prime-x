@@ -6,6 +6,11 @@ import {
   Typography,
 } from "animation-ship-components";
 import { ReservationData } from "animation-ship-components/dist/components/Organisms/ReservationInfo";
+import dayjs from "dayjs";
+import "dayjs/locale/ar-sa";
+import "dayjs/locale/en";
+
+dayjs.locale("ar-sa");
 
 interface SubmissionFormProps {
   calendarTitle: string;
@@ -16,9 +21,11 @@ interface SubmissionFormProps {
   lastNameLabel: string;
   phoneLabel: string;
   timeHeader: string;
+  formHeader: string;
   times: string[];
   yearOfBirthLabel: string;
   submitText: string;
+  prefixComponent?: React.ReactNode;
 }
 
 const SubmissionForm: React.FC<SubmissionFormProps> = ({
@@ -33,15 +40,18 @@ const SubmissionForm: React.FC<SubmissionFormProps> = ({
   yearOfBirthLabel,
   submitText,
   language,
+  formHeader,
+  prefixComponent,
 }) => {
   const handleSubmitData = (data: ReservationData) => {
     console.log(data);
   };
   return (
     <Container backgroundColor="grey">
-      <Stack className="gap-[2rem] p-[2rem]">
-        <Typography align="center" variant="h2">
-          {formTitle}
+      <Stack className="gap-[2rem] px-[2rem] py-[6rem]">
+        {prefixComponent}
+        <Typography align="center" color="primary" variant="h3">
+          {formHeader}
         </Typography>
         <ReservationForm
           calendarTitle={calendarTitle}

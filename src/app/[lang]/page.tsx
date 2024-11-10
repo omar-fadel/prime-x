@@ -11,6 +11,7 @@ import {
 } from "animation-ship-components";
 import IconText from "../../components/IconText";
 import SubmissionForm from "../../components/SubmissionForm";
+import ReserveNowButton from "../../components/ReserveNowButton";
 
 const Page: React.FC<Params> = async ({ params }) => {
   const awaitedParams = await params;
@@ -44,6 +45,7 @@ const Page: React.FC<Params> = async ({ params }) => {
             width={512}
             height={509}
             alt="home1"
+            className="ltr:scale-x-[-1]"
           />
         }
       />
@@ -59,13 +61,13 @@ const Page: React.FC<Params> = async ({ params }) => {
               width={356}
               height={467}
               alt="home2"
-              className="col-start-1 row-start-1 z-10"
+              className="col-start-1 row-start-1 z-10 ltr:scale-x-[-1]"
             />
             <div className="size-[25rem] rounded-full bg-primary-main col-start-1 row-start-1" />
           </CenterChildren>
         }
       />
-      <Container>
+      <Container className="bg-white">
         <Stack className="gap-[1rem]  justify-center items-center min-h-[48rem] w-full">
           <Typography align="center" variant="h1" color="primary">
             {dictionaries.home.fourthSection.title}
@@ -94,6 +96,24 @@ const Page: React.FC<Params> = async ({ params }) => {
         </Stack>
       </Container>
       <SubmissionForm {...dictionaries.form} language={awaitedParams.lang} />
+      <Container backgroundColor="black">
+        <div
+          style={{
+            backgroundImage: "url(/backgrounds/home-2.png)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <Stack className="gap-[4rem] justify-center items-center h-[32rem]">
+            <Typography align="center" variant="h1" color="white">
+              {dictionaries.home.end}
+            </Typography>
+            <ReserveNowButton
+              reserveText={dictionaries.footer.reserveNowButton}
+            />
+          </Stack>
+        </div>
+      </Container>
     </>
   );
 };

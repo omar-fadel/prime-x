@@ -27,18 +27,26 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({
   }, [path]);
 
   const handleClickHeaderItem = (id: string) => {
-    router.push(`/${id}`);
+    if (currentLanguage === "ar") {
+      router.push(`/ar/${id}`);
+    } else {
+      router.push(`/en/${id}`);
+    }
   };
 
   const handleClickLogo = () => {
-    router.push("/");
+    if (currentLanguage === "ar") {
+      router.push(`/ar`);
+    } else {
+      router.push(`/en`);
+    }
   };
 
   const handleChangeLanguage = () => {
     if (currentLanguage === "ar") {
-      router.push(`/en/${activeItem}`);
+      router.push(`/en/${activeItem ?? ""}`);
     } else {
-      router.push(`/ar/${activeItem}`);
+      router.push(`/ar/${activeItem ?? ""}`);
     }
   };
   return (
