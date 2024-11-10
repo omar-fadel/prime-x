@@ -1,5 +1,6 @@
 "use client";
 import { Promotion } from "animation-ship-components";
+import { usePathname, useRouter } from "next/navigation";
 
 interface ClassesSectionProps {
   classes: {
@@ -14,9 +15,14 @@ const ClassesSection: React.FC<ClassesSectionProps> = ({
   classes,
   buttonsText,
 }) => {
-  const handleClickPromotion = (id: string) => {
-    console.log("clicked promotion", id);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const handleClickButton = () => {
+    const locale = pathname.split("/")[1];
+    router.push(`/${locale}/contact-us`);
   };
+
   return (
     <div className="flex gap-[2rem] flex-wrap justify-center">
       {classes.map((item) => (
@@ -27,7 +33,7 @@ const ClassesSection: React.FC<ClassesSectionProps> = ({
           promotionIcon="Date"
           promotionText={buttonsText}
           title={item.title}
-          onPromotion={handleClickPromotion}
+          onPromotion={handleClickButton}
         />
       ))}
     </div>
