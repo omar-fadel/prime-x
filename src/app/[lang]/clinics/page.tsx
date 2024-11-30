@@ -40,7 +40,7 @@ const Clinics: React.FC<Params> = async ({ params }) => {
           />
         </Stack>
       </Container>
-      <Container backgroundColor="white">
+      <Container backgroundColor="white" className="py-[4rem]">
         <ButtonTextSection
           buttonText={dictionaries.clinics.moreSubscription}
           destinationPage="classes"

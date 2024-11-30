@@ -1,5 +1,5 @@
 "use client";
-import { Button, Typography } from "animation-ship-components";
+import { Typography } from "animation-ship-components";
 import { usePathname, useRouter } from "next/navigation";
 
 interface ButtonTextSection {
@@ -26,7 +26,7 @@ const ButtonTextSection: React.FC<ButtonTextSection> = ({
         {text}
       </Typography>
       <button
-        className="min-w-[14rem] font-bold py-[0.75rem] border-[0.15rem] rounded-1xl hover:text-white hover:bg-black border-black"
+        className="min-w-[14rem] font-bold px-[1rem] py-[0.75rem] border-[0.15rem] rounded-1xl hover:text-white hover:bg-black border-black"
         color="white"
         onClick={handleClickButton}
       >

@@ -81,9 +81,6 @@ const Contact: React.FC<Params> = async ({ params }) => {
           <Typography align="center" variant="h1" color="white">
             {dictionaries.classes.reserveNow}
           </Typography>
-          <Typography align="center" variant="h5" color="white">
-            {dictionaries.classes.reserveNowDescription}
-          </Typography>
           <ReserveNowButton
             reserveText={dictionaries.footer.reserveNowButton}
           />
