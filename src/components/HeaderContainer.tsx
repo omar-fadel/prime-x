@@ -51,7 +51,7 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({
   };
   return (
     <Header
-      currentLanguage={currentLanguage}
+      currentLanguage={currentLanguage === 'ar' ? 'en' : 'ar'}
       onLanguageChange={handleChangeLanguage}
       logo={
         <Icons
