@@ -15,11 +15,6 @@ const Images: ReactNode[] = [
     width={160}
     height={416}
     alt="subscription-3-month"
-    className="rtl:mr-[4rem] ltr:ml-[4rem]"
-    style={{
-      marginRight: "4rem",
-      maxHeight: "calc(21.25rem + 2rem)",
-    }}
   />,
   <Image
     key={"image-3"}

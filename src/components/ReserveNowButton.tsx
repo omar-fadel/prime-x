@@ -15,7 +15,12 @@ const ReserveNowButton: React.FC<ReserveNowButtonProps> = ({ reserveText }) => {
   };
 
   return (
-    <Button color="white" text={reserveText} onClick={handleClickButton} />
+    <Button
+      color="white"
+      className="px-[3rem] rounded-1xl"
+      text={reserveText}
+      onClick={handleClickButton}
+    />
   );
 };
 

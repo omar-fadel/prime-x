@@ -104,7 +104,7 @@ const Page: React.FC<Params> = async ({ params }) => {
             backgroundPosition: "center",
           }}
         >
-          <Stack className="gap-[4rem] justify-center items-center h-[32rem]">
+          <Stack className="gap-[2rem] justify-center items-center h-[32rem]">
             <Typography align="center" variant="h1" color="white">
               {dictionaries.home.end}
             </Typography>

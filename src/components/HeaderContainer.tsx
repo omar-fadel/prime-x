@@ -51,7 +51,7 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({
   };
   return (
     <Header
-      currentLanguage={currentLanguage === 'ar' ? 'en' : 'ar'}
+      currentLanguage={currentLanguage === "ar" ? "en" : "ar"}
       onLanguageChange={handleChangeLanguage}
       logo={
         <Icons
@@ -76,11 +76,11 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({
             id: "clinics",
             text: clinicsLabel,
           },
-          {
-            id: "contact-us",
-            text: contactUsLabel,
-          },
         ],
+        callToAction: {
+          id: "contact-us",
+          text: contactUsLabel,
+        },
         onChangeActiveItem: handleClickHeaderItem,
       }}
     />

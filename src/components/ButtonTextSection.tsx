@@ -25,12 +25,13 @@ const ButtonTextSection: React.FC<ButtonTextSection> = ({
       <Typography align="center" variant="h1" color="black">
         {text}
       </Typography>
-      <Button
-        className="min-w-[14rem] border-[0.25rem] border-black"
+      <button
+        className="min-w-[14rem] font-bold py-[0.75rem] border-[0.15rem] rounded-1xl hover:text-white hover:bg-black border-black"
         color="white"
-        text={buttonText}
         onClick={handleClickButton}
-      />
+      >
+        {buttonText}
+      </button>
     </section>
   );
 };
